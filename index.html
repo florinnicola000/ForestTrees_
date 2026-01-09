@@ -1,108 +1,121 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Flora Forestieră Lemnoasă RO</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Pagini oficiale pentru aplicația Flora Forestieră Lemnoasă RO: politică de confidențialitate și suport.">
 
   <style>
-    :root { --fg:#111; --muted:#555; --link:#0b57d0; --bg:#fff; --border:#e6e6e6; }
-    @media (prefers-color-scheme: dark) {
-      :root { --fg:#eee; --muted:#bbb; --link:#8ab4ff; --bg:#111; --border:#333; }
-    }
+    :root { color-scheme: light dark; }
 
-    html, body { background: var(--bg); color: var(--fg); }
     body {
-      max-width: 860px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      max-width: 820px;
       margin: 40px auto;
-      padding: 0 16px 60px;
-      font: 16px/1.65 -apple-system, system-ui, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      padding: 20px;
+      background: #f4f6f4;
+      color: #2b2b2b;
+      line-height: 1.6;
     }
 
-    h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 8px; }
-    h2 { font-size: 1.25rem; line-height: 1.35; margin-top: 1.8rem; }
-    p { margin: 0.4rem 0; }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0f120f; color: #e0e0e0; }
+      .card { background: #1a1f1a; box-shadow: none; }
+      a { color: #7fdc8c; }
+    }
 
-    a { color: var(--link); text-decoration: none; }
+    h1, h2 { color: #256b2d; margin-top: 0; }
+
+    a {
+      color: #256b2d;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
     a:hover { text-decoration: underline; }
+
+    .card {
+      background: #ffffff;
+      padding: 28px;
+      border-radius: 14px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
 
     .lang {
       text-align: right;
-      font-size: 0.9rem;
-      margin-bottom: 18px;
+      font-size: 0.9em;
+      margin-bottom: 12px;
     }
 
-    .subtitle { color: var(--muted); }
-
-    .card {
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 16px 18px;
-      background: transparent;
-      margin: 18px 0;
-    }
+    .muted { opacity: 0.8; }
 
     footer {
-      margin-top: 40px;
-      font-size: 0.95rem;
-      color: var(--muted);
+      margin-top: 32px;
+      font-size: 0.9em;
+      opacity: 0.7;
     }
   </style>
 </head>
 
 <body>
+  <div class="card">
 
-  <!-- RO -->
-  <div class="lang">
-    <strong>RO</strong> · <a href="#en">EN</a>
-  </div>
+    <!-- RO -->
+    <div class="lang">
+      <strong>RO</strong> · <a href="#en">EN</a>
+    </div>
 
-  <h1>Flora Forestieră Lemnoasă RO</h1>
-  <p class="subtitle">Pagini oficiale ale aplicației</p>
+    <h1>Flora Forestieră Lemnoasă RO</h1>
+    <p class="muted">
+      Aplicație educațională pentru identificarea speciilor forestiere lemnoase din România pe iOS.
+    </p>
 
-  <section class="card">
-    <h2>Informații legale și suport</h2>
-    <p>Mai jos găsești documentele oficiale necesare pentru utilizarea aplicației:</p>
+    <h2>Pagini oficiale</h2>
     <ul>
-      <li><a href="privacy.html">Politica de Confidențialitate</a></li>
-      <li><a href="support.html">Suport</a></li>
+      <li>
+        <a href="support.html">Suport</a>
+      </li>
+      <li>
+        <a href="privacy.html">Politica de confidențialitate</a>
+      </li>
     </ul>
-  </section>
 
-  <footer>
-    © <span id="year"></span> Flora Forestieră Lemnoasă RO
-  </footer>
+    <footer>
+      © <span id="year"></span> Florin Nicola · iOS application
+    </footer>
 
-  <hr id="en" style="margin:50px 0; opacity:.25">
+    <hr id="en" style="margin:40px 0; opacity:.25">
 
-  <!-- EN -->
-  <div class="lang">
-    <a href="#">RO</a> · <strong>EN</strong>
-  </div>
+    <!-- EN -->
+    <div class="lang">
+      <a href="#">RO</a> · <strong>EN</strong>
+    </div>
 
-  <h1>Flora Forestieră Lemnoasă RO</h1>
-  <p class="subtitle">Official application pages</p>
+    <h1>Flora Forestieră Lemnoasă RO</h1>
+    <p class="muted">
+      Educational iOS application for identifying woody forest species from Romania.
+    </p>
 
-  <section class="card">
-    <h2>Legal and support information</h2>
-    <p>Below you can find the official documents for this application:</p>
+    <h2>Official pages</h2>
     <ul>
-      <li><a href="privacy.html">Privacy Policy</a></li>
-      <li><a href="support.html">Support</a></li>
+      <li>
+        <a href="support.html">Support</a>
+      </li>
+      <li>
+        <a href="privacy.html">Privacy Policy</a>
+      </li>
     </ul>
-  </section>
 
-  <footer>
-    © <span id="year-en"></span> Flora Forestieră Lemnoasă RO
-  </footer>
+    <footer>
+      © <span id="year-en"></span> Florin Nicola · iOS application
+    </footer>
+
+  </div>
 
   <script>
     const y = new Date().getFullYear();
     document.getElementById('year').textContent = y;
     document.getElementById('year-en').textContent = y;
   </script>
-
 </body>
 </html>
